@@ -1,4 +1,138 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Graundcian</title><link>https://miaospi.cn/</link><description>Graundcian博客。</description><generator>Hugo 0.83.1 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>graundain@gmail.com (graundain)</managingEditor><webMaster>graundain@gmail.com (graundain)</webMaster><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><lastBuildDate>Sun, 16 May 2021 17:00:24 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://miaospi.cn/rss.xml"/><item><title>Typora中的PicGO Core配置</title><link>https://miaospi.cn/posts/typora%E4%B8%AD%E7%9A%84picgo-core%E9%85%8D%E7%BD%AE/</link><guid isPermaLink="true">https://miaospi.cn/posts/typora%E4%B8%AD%E7%9A%84picgo-core%E9%85%8D%E7%BD%AE/</guid><pubDate>Sun, 16 May 2021 23:46:23 +0800</pubDate><author>graundain@gmail.com (graundain)</author><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;h1 id="下载picgo-core">下载PicGo-Core&lt;/h1>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Graundcian</title><link>https://miaospi.cn/</link><description>Graundcian博客。</description><generator>Hugo 0.83.1 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>graundain@gmail.com (graundain)</managingEditor><webMaster>graundain@gmail.com (graundain)</webMaster><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><lastBuildDate>Mon, 17 May 2021 08:14:00 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://miaospi.cn/rss.xml"/><item><title>Java入门</title><link>https://miaospi.cn/posts/java%E5%85%A5%E9%97%A8/</link><guid isPermaLink="true">https://miaospi.cn/posts/java%E5%85%A5%E9%97%A8/</guid><pubDate>Sun, 16 May 2021 21:01:18 +0800</pubDate><author>graundain@gmail.com (graundain)</author><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>特性及优势、版本差异、环境搭建、运行机制&lt;/p>
+&lt;h1 id="java简介">Java简介&lt;/h1>
+&lt;h2 id="java的特性和优势">Java的特性和优势&lt;/h2>
+&lt;ul>
+&lt;li>简单性&lt;/li>
+&lt;li>面向对象&lt;/li>
+&lt;li>可移植性（Write ones, Run anywhere）&lt;/li>
+&lt;li>高性能&lt;/li>
+&lt;li>分布式&lt;/li>
+&lt;li>动态性（本身不具有动态性，可以通过“反射”实现）&lt;/li>
+&lt;li>多线程&lt;/li>
+&lt;li>安全性&lt;/li>
+&lt;li>健壮性&lt;/li>
+&lt;/ul>
+&lt;h2 id="java的三大版本">Java的三大版本&lt;/h2>
+&lt;ul>
+&lt;li>&lt;strong>JavaSE&lt;/strong>: 标准版（桌面程序，控制台开发......)&lt;/li>
+&lt;li>JavaME：嵌入式开发（基本已经废弃）&lt;/li>
+&lt;li>&lt;strong>JavaEE&lt;/strong>：企业级开发（web端，服务器开发.....)&lt;/li>
+&lt;/ul>
+&lt;h2 id="jdkjrejvm">JDK、JRE、JVM&lt;/h2>
+&lt;ul>
+&lt;li>JDK：Java Development Kit&lt;/li>
+&lt;li>JRE：Java Runtime Environment&lt;/li>
+&lt;li>JVM：Java Virtual Machine&lt;/li>
+&lt;/ul>
+&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/Graundcian/images@master/blog/image.v0efhp6of2o.png" alt="image">&lt;/p>
+&lt;h1 id="java开发环境搭建">Java开发环境搭建&lt;/h1>
+&lt;h2 id="安装jdk">安装JDK&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>[JDK 下载地址](&lt;a href="https://www.oracle.com/java/technologies/javase-downloads.html">Java SE - Downloads | Oracle Technology Network | Oracle&lt;/a>)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>安装、配置环境变量&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>变量名：JAVA_HOME 变量值： C:\Program Files\Java\jdk1.8.0_191&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>变量名：CLASSPATH 变量值：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Path变量 中添加：%JAVA_HOME%\bin 和 %JAVA_HOME%\jre\bin&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>测试环境&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-powershell" data-lang="powershell">&lt;span class="n">Java&lt;/span>
+&lt;span class="n">javac&lt;/span>
+&lt;span class="n">java&lt;/span> &lt;span class="n">-version&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>如果报错，检查环境变量设置是否正确。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="安装idea">安装IDEA&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://www.jetbrains.com/idea/download/#section=windows">Download IntelliJ IDEA: The Capable &amp;amp; Ergonomic Java IDE by JetBrains&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h1 id="helloworld">HelloWorld&lt;/h1>
+&lt;ol>
+&lt;li>
+&lt;p>新建文件夹，存放代码&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>新建 Java 文件&lt;/p>
+&lt;ul>
+&lt;li>后缀名为：“.java”&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>编写代码&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="kd">public&lt;/span> &lt;span class="kd">class&lt;/span> &lt;span class="nc">Hello&lt;/span>&lt;span class="o">{&lt;/span>
+&lt;span class="kd">public&lt;/span> &lt;span class="kd">static&lt;/span> &lt;span class="kt">void&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="n">String&lt;/span>&lt;span class="o">[]&lt;/span> &lt;span class="n">args&lt;/span>&lt;span class="o">){&lt;/span>
+&lt;span class="n">System&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">out&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">print&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="s">&amp;#34;Hello,World!&amp;#34;&lt;/span>&lt;span class="o">);&lt;/span>
+&lt;span class="o">}&lt;/span>
+&lt;span class="o">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;/li>
+&lt;li>
+&lt;p>编译 &amp;amp; 运行&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">javac Hello.java &lt;span class="c1"># 生成一个class文件&lt;/span>
+java Hello.class &lt;span class="c1"># 运行 class 文件&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/Graundcian/images@master/blog/2021/05/17/20210517155425.png" alt="image-20210516233738809">&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="可能出现的问题">可能出现的问题&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>大小写敏感&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>尽量用中文&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>文件名 和 类名必须保持一致&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="java-程序运行机制">Java 程序运行机制&lt;/h1>
+&lt;ul>
+&lt;li>编译型：运行速度快，可移植性差&lt;/li>
+&lt;li>解释型：边解释边执行，跨平台容易，运行效率低&lt;/li>
+&lt;/ul>
+&lt;p>随着硬件的发展，编译型和解释型语言的界限再逐渐变小。&lt;/p>
+&lt;p>Java语言是先&lt;strong>编译（compile）&lt;/strong> 后&lt;strong>解释（interpretation）&lt;/strong>&lt;/p>
+&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/Graundcian/images@master/blog/2021/05/17/20210517145907" alt="img">&lt;/p></description><category domain="https://miaospi.cn/posts/">posts</category><category domain="https://miaospi.cn/tags/learning/">learning</category><category domain="https://miaospi.cn/tags/java/">Java</category></item><item><title>Typora图片自动上传图床</title><link>https://miaospi.cn/posts/typora%E5%9B%BE%E7%89%87%E8%87%AA%E5%8A%A8%E4%B8%8A%E4%BC%A0%E5%9B%BE%E5%BA%8A/</link><guid isPermaLink="true">https://miaospi.cn/posts/typora%E5%9B%BE%E7%89%87%E8%87%AA%E5%8A%A8%E4%B8%8A%E4%BC%A0%E5%9B%BE%E5%BA%8A/</guid><pubDate>Sat, 15 May 2021 23:46:23 +0800</pubDate><author>graundain@gmail.com (graundain)</author><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>PicGo-Core配置 Github 图床、下载插件、手动配置Config.json(配置文件)、图片时间戳命名&lt;/p>
+&lt;h1 id="下载picgo-core">下载PicGo-Core&lt;/h1>
 &lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/Graundcian/images@master/blog/2021/05/16/20210516235109" alt="img">&lt;/p>
 &lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/Graundcian/images@master/blog/2021/05/16/20210516235128" alt="img">&lt;/p>
 &lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/Graundcian/images@master/blog/2021/05/16/20210516235143" alt="img">&lt;/p>
@@ -100,124 +234,7 @@
 &lt;ul>
 &lt;li>&lt;a href="https://support.typora.io/Upload-Image/#install-prebuilt-binary-of-picgo-core-linux--windows">Upload Images (typora.io)&lt;/a>&lt;/li>
 &lt;li>&lt;a href="%5BTypora%E8%87%AA%E5%8A%A8%E4%B8%8A%E4%BC%A0%E5%9B%BE%E7%89%87%E9%85%8D%E7%BD%AE%EF%BC%8C%E9%9B%86%E6%88%90PicGo-Core%EF%BC%8C%E6%96%87%E4%BB%B6%E4%BB%A5%E6%97%B6%E9%97%B4%E6%88%B3%E5%91%BD%E5%90%8D_in_the_road%E7%9A%84%E5%8D%9A%E5%AE%A2-CSDN%E5%8D%9A%E5%AE%A2%5D(https://blog.csdn.net/in_the_road/article/details/105733292)">Typora自动上传图片配置，集成PicGo-Core，文件以时间戳命名&lt;/a>&lt;/li>
-&lt;/ul></description><category domain="https://miaospi.cn/posts/">posts</category><category domain="https://miaospi.cn/tags/typora/">Typora</category><category domain="https://miaospi.cn/tags/picgo-core/">PicGo-Core</category></item><item><title>Java入门02—Hello World详解</title><link>https://miaospi.cn/posts/java%E5%85%A5%E9%97%A802hello-world%E8%AF%A6%E8%A7%A3/</link><guid isPermaLink="true">https://miaospi.cn/posts/java%E5%85%A5%E9%97%A802hello-world%E8%AF%A6%E8%A7%A3/</guid><pubDate>Sun, 16 May 2021 21:56:56 +0800</pubDate><author>graundain@gmail.com (graundain)</author><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;h1 id="helloworld">HelloWorld&lt;/h1>
-&lt;ol>
-&lt;li>
-&lt;p>新建文件夹，存放代码&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>新建 Java 文件&lt;/p>
-&lt;ul>
-&lt;li>后缀名为：“.java”&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>编写代码&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-java" data-lang="java">&lt;span class="kd">public&lt;/span> &lt;span class="kd">class&lt;/span> &lt;span class="nc">Hello&lt;/span>&lt;span class="o">{&lt;/span>
-&lt;span class="kd">public&lt;/span> &lt;span class="kd">static&lt;/span> &lt;span class="kt">void&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="n">String&lt;/span>&lt;span class="o">[]&lt;/span> &lt;span class="n">args&lt;/span>&lt;span class="o">){&lt;/span>
-&lt;span class="n">System&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">out&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">print&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="s">&amp;#34;Hello,World!&amp;#34;&lt;/span>&lt;span class="o">);&lt;/span>
-&lt;span class="o">}&lt;/span>
-&lt;span class="o">}&lt;/span>
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;/li>
-&lt;li>
-&lt;p>编译 &amp;amp; 运行&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">javac Hello.java &lt;span class="c1"># 生成一个class文件&lt;/span>
-java Hello.class &lt;span class="c1"># 运行 class 文件&lt;/span>
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/Graundcian/images@master/blog/2021/05/16/20210516233748.png" alt="image-20210516233738809">&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;h2 id="可能出现的问题">可能出现的问题&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;p>大小写敏感&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>尽量用中文&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>文件名 和 类名必须保持一致&lt;/p>
-&lt;/li>
-&lt;/ul></description><category domain="https://miaospi.cn/posts/">posts</category><category domain="https://miaospi.cn/tags/learning/">learning</category><category domain="https://miaospi.cn/tags/java/">Java</category></item><item><title>Java入门01—环境搭建</title><link>https://miaospi.cn/posts/java%E5%85%A5%E9%97%A801%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link><guid isPermaLink="true">https://miaospi.cn/posts/java%E5%85%A5%E9%97%A801%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</guid><pubDate>Sun, 16 May 2021 21:01:18 +0800</pubDate><author>graundain@gmail.com (graundain)</author><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;h1 id="java的特性和优势">Java的特性和优势&lt;/h1>
-&lt;ul>
-&lt;li>简单性&lt;/li>
-&lt;li>面向对象&lt;/li>
-&lt;li>可移植性（Write ones, Run anywhere）&lt;/li>
-&lt;li>高性能&lt;/li>
-&lt;li>分布式&lt;/li>
-&lt;li>动态性（本身不具有动态性，可以通过“反射”实现）&lt;/li>
-&lt;li>多线程&lt;/li>
-&lt;li>安全性&lt;/li>
-&lt;li>健壮性&lt;/li>
-&lt;/ul>
-&lt;h1 id="java的三大版本">Java的三大版本&lt;/h1>
-&lt;ul>
-&lt;li>&lt;strong>JavaSE&lt;/strong>: 标准版（桌面程序，控制台开发......)&lt;/li>
-&lt;li>JavaME：嵌入式开发（基本已经废弃）&lt;/li>
-&lt;li>&lt;strong>JavaEE&lt;/strong>：企业级开发（web端，服务器开发.....)&lt;/li>
-&lt;/ul>
-&lt;h1 id="jdkjrejvm">JDK、JRE、JVM&lt;/h1>
-&lt;ul>
-&lt;li>JDK：Java Development Kit&lt;/li>
-&lt;li>JRE：Java Runtime Environment&lt;/li>
-&lt;li>JVM：Java Virtual Machine&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="https://cdn.jsdelivr.net/gh/Graundcian/images@master/blog/image.v0efhp6of2o.png" alt="image">&lt;/p>
-&lt;h1 id="java开发环境搭建">Java开发环境搭建&lt;/h1>
-&lt;ol>
-&lt;li>
-&lt;p>[JDK 下载地址](&lt;a href="https://www.oracle.com/java/technologies/javase-downloads.html">Java SE - Downloads | Oracle Technology Network | Oracle&lt;/a>)&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>安装、配置环境变量&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>变量名：JAVA_HOME 变量值： C:\Program Files\Java\jdk1.8.0_191&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>变量名：CLASSPATH 变量值：.;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Path变量 中添加：%JAVA_HOME%\bin 和 %JAVA_HOME%\jre\bin&lt;/p>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>测试环境&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-powershell" data-lang="powershell">&lt;span class="n">Java&lt;/span>
-&lt;span class="n">javac&lt;/span>
-&lt;span class="n">java&lt;/span> &lt;span class="n">-version&lt;/span>
-&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>如果报错，检查环境变量设置是否正确。&lt;/p>
-&lt;/li>
-&lt;/ol></description><category domain="https://miaospi.cn/posts/">posts</category><category domain="https://miaospi.cn/tags/learning/">learning</category><category domain="https://miaospi.cn/tags/java/">Java</category></item><item><title>Markdown语法</title><link>https://miaospi.cn/posts/markdown%E8%AF%AD%E6%B3%95/</link><guid isPermaLink="true">https://miaospi.cn/posts/markdown%E8%AF%AD%E6%B3%95/</guid><pubDate>Fri, 14 May 2021 23:21:03 +0800</pubDate><author>graundain@gmail.com (graundain)</author><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>基本的 Markdown 语法&lt;/p>
+&lt;/ul></description><category domain="https://miaospi.cn/posts/">posts</category><category domain="https://miaospi.cn/tags/typora/">Typora</category><category domain="https://miaospi.cn/tags/picgo-core/">PicGo-Core</category></item><item><title>Markdown语法</title><link>https://miaospi.cn/posts/markdown%E8%AF%AD%E6%B3%95/</link><guid isPermaLink="true">https://miaospi.cn/posts/markdown%E8%AF%AD%E6%B3%95/</guid><pubDate>Fri, 14 May 2021 23:21:03 +0800</pubDate><author>graundain@gmail.com (graundain)</author><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>基本的 Markdown 语法&lt;/p>
 &lt;h1 id="markdown">Markdown&lt;/h1>
 &lt;h2 id="标题">标题&lt;/h2>
 &lt;ol>
