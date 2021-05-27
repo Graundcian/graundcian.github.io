@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Graundcian</title><link>https://miaospi.cn/</link><description>Graundcian博客。</description><generator>Hugo 0.83.1 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>graundain@gmail.com (graundain)</managingEditor><webMaster>graundain@gmail.com (graundain)</webMaster><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><lastBuildDate>Thu, 27 May 2021 08:43:06 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://miaospi.cn/rss.xml"/><item><title>Java基础</title><link>https://miaospi.cn/posts/java%E5%9F%BA%E7%A1%80/</link><guid isPermaLink="true">https://miaospi.cn/posts/java%E5%9F%BA%E7%A1%80/</guid><pubDate>Mon, 17 May 2021 16:02:53 +0800</pubDate><author>graundain@gmail.com (graundain)</author><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>Java 基础知识总结：标识符、基本数据类型、类型转换、变量、常量、运算符、包机制、JavaDoc使用&lt;/p>
-&lt;h1 id="注释标识符-关键字">注释、标识符、 关键字&lt;/h1>
-&lt;h2 id="注释">注释&lt;/h2>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>Graundcian</title><link>https://miaospi.cn/</link><description>Graundcian博客。</description><generator>Hugo 0.83.1 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>graundain@gmail.com (graundain)</managingEditor><webMaster>graundain@gmail.com (graundain)</webMaster><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><lastBuildDate>Thu, 27 May 2021 08:56:06 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://miaospi.cn/rss.xml"/><item><title>Java基础</title><link>https://miaospi.cn/posts/java%E5%9F%BA%E7%A1%80/</link><guid isPermaLink="true">https://miaospi.cn/posts/java%E5%9F%BA%E7%A1%80/</guid><pubDate>Mon, 17 May 2021 16:02:53 +0800</pubDate><author>graundain@gmail.com (graundain)</author><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>Java 基础知识总结：标识符、基本数据类型、类型转换、变量、常量、运算符、包机制、JavaDoc使用&lt;/p>
+&lt;h2 id="注释标识符-关键字">注释、标识符、 关键字&lt;/h2>
+&lt;h3 id="注释">注释&lt;/h3>
 &lt;p>书写注释是一个很好的习惯，平时写代码一定要注意规范。&lt;/p>
 &lt;p>Java中有三种注释：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -38,7 +38,7 @@
 &lt;/span>&lt;span class="cm"> */&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="标识符">标识符&lt;/h2>
+&lt;/div>&lt;h3 id="标识符">标识符&lt;/h3>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -128,15 +128,15 @@
 &lt;li>&lt;strong>标识符大小写敏感&lt;/strong>&lt;/li>
 &lt;li>不能使用关键字作为变量名或方法名&lt;/li>
 &lt;/ul>
-&lt;h1 id="数据类型">&lt;strong>数据类型&lt;/strong>&lt;/h1>
+&lt;h2 id="数据类型">&lt;strong>数据类型&lt;/strong>&lt;/h2>
 &lt;ul>
 &lt;li>强类型语言：Java、 C/C++&lt;/li>
 &lt;li>弱类型语言：JavaScript、Python&lt;/li>
 &lt;/ul>
 &lt;p>Java 属于强类型语言，要求变量的使用严格符合规定，所有的变量必须先定义后使用。&lt;/p>
 &lt;p>Java的数据类型分为两大类：&lt;/p>
-&lt;h2 id="基本类型primitive-type">基本类型（Primitive Type）&lt;/h2>
-&lt;h3 id="八大基本数据类型">八大基本数据类型&lt;/h3>
+&lt;h3 id="基本类型primitive-type">基本类型（Primitive Type）&lt;/h3>
+&lt;h4 id="八大基本数据类型">八大基本数据类型&lt;/h4>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
@@ -183,8 +183,8 @@
 &lt;span class="kt">boolean&lt;/span> &lt;span class="n">flag1&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="kc">false&lt;/span>&lt;span class="o">;&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="拓展内容">拓展内容&lt;/h3>
-&lt;h4 id="整数拓展">整数拓展&lt;/h4>
+&lt;/div>&lt;h4 id="拓展内容">拓展内容&lt;/h4>
+&lt;h5 id="整数拓展">整数拓展&lt;/h5>
 &lt;ul>
 &lt;li>二进制 0b&lt;/li>
 &lt;li>十进制0&lt;/li>
@@ -208,7 +208,7 @@
 &lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="n">System&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">out&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">println&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="n">i3&lt;/span>&lt;span class="o">);&lt;/span> &lt;span class="c1">//16
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h4 id="浮点数拓展">浮点数拓展&lt;/h4>
+&lt;/div>&lt;h5 id="浮点数拓展">浮点数拓展&lt;/h5>
 &lt;p>&lt;strong>面试题&lt;/strong>：银行业的钱怎么表示？ （BigDecimal类 – Java数学工具）&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -244,8 +244,10 @@
 &lt;span class="n">System&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">out&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">println&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="n">d1&lt;/span>&lt;span class="o">==&lt;/span>&lt;span class="n">d2&lt;/span>&lt;span class="o">);&lt;/span> &lt;span class="c1">//true
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h4 id="字符拓展">字符拓展&lt;/h4>
-&lt;h5 id="unicode编码">Unicode编码&lt;/h5>
+&lt;/div>&lt;h5 id="字符拓展">字符拓展&lt;/h5>
+&lt;ul>
+&lt;li>Unicode编码&lt;/li>
+&lt;/ul>
 &lt;p>所有的字符本质还是数字，Unicode编码 表：(97=a 65=A) ，每个编码占2字节 0 - 65536&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -278,7 +280,9 @@
 &lt;span class="n">System&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">out&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">println&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="n">c3&lt;/span>&lt;span class="o">);&lt;/span> &lt;span class="c1">//a
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h5 id="转义字符">转义字符&lt;/h5>
+&lt;/div>&lt;ul>
+&lt;li>转义字符&lt;/li>
+&lt;/ul>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -350,7 +354,7 @@
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;h4 id="布尔值拓展">布尔值拓展&lt;/h4>
+&lt;h5 id="布尔值拓展">布尔值拓展&lt;/h5>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
@@ -363,7 +367,7 @@
 &lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="k">if&lt;/span> &lt;span class="o">(&lt;/span>&lt;span class="n">flag&lt;/span>&lt;span class="o">){}&lt;/span> &lt;span class="c1">//这样是标准写法
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h4 id="思考题未解决">思考题（未解决）&lt;/h4>
+&lt;/div>&lt;h5 id="思考题未解决">思考题（未解决）&lt;/h5>
 &lt;p>讲到 对象 部分时，从内存分析&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -388,13 +392,13 @@
 &lt;span class="c1">// 在 对象 部分，从内存分析
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="引用类型reference-type">引用类型（Reference Type）&lt;/h2>
+&lt;/div>&lt;h3 id="引用类型reference-type">引用类型（Reference Type）&lt;/h3>
 &lt;ul>
 &lt;li>类&lt;/li>
 &lt;li>方法&lt;/li>
 &lt;li>变量&lt;/li>
 &lt;/ul>
-&lt;h1 id="类型转换">类型转换&lt;/h1>
+&lt;h2 id="类型转换">类型转换&lt;/h2>
 &lt;p>Java 是强类型语言，进行有些运算时，需要用到类型转换&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -406,7 +410,7 @@
 &lt;/span>&lt;span class="c1">&lt;/span> &lt;span class="kt">byte&lt;/span>&lt;span class="o">,&lt;/span> &lt;span class="kt">short&lt;/span>&lt;span class="o">,&lt;/span>&lt;span class="kt">char&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="kt">int&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="kt">long&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="kt">float&lt;/span> &lt;span class="o">-&amp;gt;&lt;/span> &lt;span class="kt">double&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="强制类型转换">强制类型转换&lt;/h2>
+&lt;/div>&lt;h3 id="强制类型转换">强制类型转换&lt;/h3>
 &lt;p>方法：（类型名）变量名&lt;/p>
 &lt;p>高容量 --&amp;gt; 低容量转换，存在 &lt;u>内存溢出问题&lt;/u>，以及 &lt;u>精度丢失问题&lt;/u>。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -425,7 +429,7 @@
 &lt;span class="n">System&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">out&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">println&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="n">b&lt;/span>&lt;span class="o">);&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="自动类型转换">自动类型转换&lt;/h2>
+&lt;/div>&lt;h3 id="自动类型转换">自动类型转换&lt;/h3>
 &lt;p>直接可以转换 ，低容量 --&amp;gt; 高容量&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -443,7 +447,7 @@
 &lt;span class="n">System&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">out&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">println&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="n">b1&lt;/span>&lt;span class="o">);&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="注意事项">注意事项&lt;/h2>
+&lt;/div>&lt;h3 id="注意事项">注意事项&lt;/h3>
 &lt;ol>
 &lt;li>不能对 &lt;u>布尔值&lt;/u>（boolean）进行类型转换。&lt;/li>
 &lt;li>不能把 &lt;u>对象类型&lt;/u> 转换为不相干类型。&lt;/li>
@@ -474,7 +478,7 @@
 &lt;span class="n">System&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">out&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">println&lt;/span>&lt;span class="o">((&lt;/span>&lt;span class="kt">char&lt;/span>&lt;span class="o">)&lt;/span>&lt;span class="n">d&lt;/span>&lt;span class="o">);&lt;/span> &lt;span class="c1">//b
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="拓展知识">拓展知识&lt;/h2>
+&lt;/div>&lt;h3 id="拓展知识">拓展知识&lt;/h3>
 &lt;p>在操作比较大的数时，要注意溢出问题。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -500,10 +504,10 @@
 &lt;span class="n">System&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">out&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">println&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="n">total3&lt;/span>&lt;span class="o">);&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h1 id="变量常量">变量、常量&lt;/h1>
-&lt;h2 id="变量variable">变量(Variable)&lt;/h2>
+&lt;/div>&lt;h2 id="变量常量">变量、常量&lt;/h2>
+&lt;h3 id="变量variable">变量(Variable)&lt;/h3>
 &lt;p>Java变量是程序中最基本的存储单元，其要素包括 变量名、变量类型和作用域。&lt;/p>
-&lt;h3 id="声明变量">声明变量&lt;/h3>
+&lt;h4 id="声明变量">声明变量&lt;/h4>
 &lt;p>每个变量都有类型，可以是基本类型，也可以是应用类型。变量声明是一条完整的语句，因此每一个声明都得以分号结束。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -525,7 +529,7 @@
 &lt;/span>&lt;span class="c1">&lt;/span> &lt;span class="n">String&lt;/span> &lt;span class="n">name&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">&amp;#34;Graundcian&amp;#34;&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h3 id="变量作用域">变量作用域&lt;/h3>
+&lt;/div>&lt;h4 id="变量作用域">变量作用域&lt;/h4>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
@@ -548,7 +552,7 @@
 &lt;span class="o">}&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h4 id="类变量">类变量&lt;/h4>
+&lt;/div>&lt;h5 id="类变量">类变量&lt;/h5>
 &lt;p>使用关键字 &lt;strong>static&lt;/strong> 声明&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -562,7 +566,7 @@
 &lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="o">}&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h4 id="实例变量">实例变量&lt;/h4>
+&lt;/div>&lt;h5 id="实例变量">实例变量&lt;/h5>
 &lt;p>从属于对象（class）, 如果不自行初始化，这个类型的&lt;strong>默认值为 0&lt;/strong>，布尔值的默认值为 &lt;strong>false&lt;/strong>，除了基本类型，其它的默认值为 &lt;strong>null。&lt;/strong>&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -576,7 +580,7 @@
 &lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="o">}&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h4 id="局部变量">局部变量&lt;/h4>
+&lt;/div>&lt;h5 id="局部变量">局部变量&lt;/h5>
 &lt;p>在方法中声明的变量，必须初始化值。&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -595,7 +599,7 @@
 &lt;span class="o">}&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="常量constant">常量(Constant)&lt;/h2>
+&lt;/div>&lt;h3 id="常量constant">常量(Constant)&lt;/h3>
 &lt;p>常量初始化(initialize)后不能在改变值，常量名一般使用 &lt;strong>大写字母&lt;/strong>&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -607,14 +611,14 @@
 &lt;/span>&lt;span class="c1">&lt;/span>&lt;span class="kd">final&lt;/span> &lt;span class="kt">double&lt;/span> &lt;span class="n">PI&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">3&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="na">14&lt;/span>&lt;span class="o">;&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="命名规范">命名规范&lt;/h2>
+&lt;/div>&lt;h3 id="命名规范">命名规范&lt;/h3>
 &lt;ul>
 &lt;li>所用变量、方法、类名，见名知意&lt;/li>
 &lt;li>常量使用 大写字母和下划线：MAX_VALUE&lt;/li>
 &lt;li>类名：首字母大写和驼峰原则 Man、GoodMan&lt;/li>
 &lt;li>其它的命名都应符合 首字母小写和驼峰原则 run() 、 monthSalary&lt;/li>
 &lt;/ul>
-&lt;h1 id="运算符">运算符😢&lt;/h1>
+&lt;h2 id="运算符">运算符😢&lt;/h2>
 &lt;ul>
 &lt;li>*&lt;em>算数运算符：+, -, &lt;em>, /, %(模), ++, - -&lt;/em>&lt;/em>&lt;/li>
 &lt;li>&lt;strong>赋值运算符：=&lt;/strong>&lt;/li>
@@ -624,7 +628,7 @@
 &lt;li>条件运算符：？&lt;/li>
 &lt;li>扩展运算符：+=, -=, *=, /=&lt;/li>
 &lt;/ul>
-&lt;h1 id="包机制javadoc">包机制、JavaDoc&lt;/h1></description><category domain="https://miaospi.cn/posts/">posts</category><category domain="https://miaospi.cn/tags/learning/">learning</category><category domain="https://miaospi.cn/tags/java/">Java</category></item><item><title>Java入门</title><link>https://miaospi.cn/posts/java%E5%85%A5%E9%97%A8/</link><guid isPermaLink="true">https://miaospi.cn/posts/java%E5%85%A5%E9%97%A8/</guid><pubDate>Sun, 16 May 2021 21:01:18 +0800</pubDate><author>graundain@gmail.com (graundain)</author><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>特性及优势、版本差异、环境搭建、运行机制&lt;/p>
+&lt;h2 id="包机制javadoc">包机制、JavaDoc&lt;/h2></description><category domain="https://miaospi.cn/posts/">posts</category><category domain="https://miaospi.cn/tags/learning/">learning</category><category domain="https://miaospi.cn/tags/java/">Java</category></item><item><title>Java入门</title><link>https://miaospi.cn/posts/java%E5%85%A5%E9%97%A8/</link><guid isPermaLink="true">https://miaospi.cn/posts/java%E5%85%A5%E9%97%A8/</guid><pubDate>Sun, 16 May 2021 21:01:18 +0800</pubDate><author>graundain@gmail.com (graundain)</author><copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright><description>&lt;p>特性及优势、版本差异、环境搭建、运行机制&lt;/p>
 &lt;h1 id="java简介">Java简介&lt;/h1>
 &lt;h2 id="java的特性和优势">Java的特性和优势&lt;/h2>
 &lt;ul>
