@@ -2,8 +2,8 @@
 <meta name=viewport content="width=device-width">
 <title>Java基础 | Graundcian's Blog</title>
 <meta name=generator content="Hugo Eureka 0.8.3">
-<link rel=stylesheet href=/css/eureka.min.css>
-<script defer src=/js/eureka.min.js></script>
+<link rel=stylesheet href=https://graundcian.cn/css/eureka.min.css>
+<script defer src=https://graundcian.cn/js/eureka.min.js></script>
 <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
 <link rel=preload href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" as=style onload="this.onload=null,this.rel='stylesheet'">
 <link rel=stylesheet href=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/solarized-light.min.css media=print onload="this.media='all',this.onload=null" crossorigin>
@@ -18,14 +18,14 @@
 <link rel=preconnect href=https://www.google-analytics.com crossorigin>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123-45"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','UA-123-45')</script>
-<link rel=icon type=image/png sizes=32x32 href=/images/icon_hu64421c6c7700f606f0ad45d807017b09_5843_32x32_fill_box_center_3.png>
-<link rel=apple-touch-icon sizes=180x180 href=/images/icon_hu64421c6c7700f606f0ad45d807017b09_5843_180x180_fill_box_center_3.png>
+<link rel=icon type=image/png sizes=32x32 href=https://graundcian.cn/images/icon_hu64421c6c7700f606f0ad45d807017b09_5843_32x32_fill_box_center_3.png>
+<link rel=apple-touch-icon sizes=180x180 href=https://graundcian.cn/images/icon_hu64421c6c7700f606f0ad45d807017b09_5843_180x180_fill_box_center_3.png>
 <meta name=description content="Java 基础知识总结：标识符、基本数据类型、类型转换、变量、常量、运算符、包机制、JavaDoc使用">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"文章","item":"/posts/"},{"@type":"ListItem","position":2,"name":"Java基础","item":"/posts/java%E5%9F%BA%E7%A1%80/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"/posts/java%E5%9F%BA%E7%A1%80/"},"headline":"Java基础 | Graundcian\u0027s Blog","datePublished":"2021-05-17T16:02:53+08:00","dateModified":"2021-05-17T16:02:53+08:00","wordCount":2152,"author":{"@type":"Person","name":["graundcian"]},"publisher":{"@type":"Person","name":"Graundcian","logo":{"@type":"ImageObject","url":"/images/icon.png"}},"description":"\u003cp\u003eJava 基础知识总结：标识符、基本数据类型、类型转换、变量、常量、运算符、包机制、JavaDoc使用\u003c\/p\u003e"}</script><meta property="og:title" content="Java基础 | Graundcian's Blog">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"文章","item":"https://graundcian.cn/posts/"},{"@type":"ListItem","position":2,"name":"Java基础","item":"https://graundcian.cn/posts/java%E5%9F%BA%E7%A1%80/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://graundcian.cn/posts/java%E5%9F%BA%E7%A1%80/"},"headline":"Java基础 | Graundcian\u0027s Blog","datePublished":"2021-05-17T16:02:53+08:00","dateModified":"2021-05-17T16:02:53+08:00","wordCount":2152,"author":{"@type":"Person","name":["graundcian"]},"publisher":{"@type":"Person","name":"Graundcian","logo":{"@type":"ImageObject","url":"https://graundcian.cn/images/icon.png"}},"description":"\u003cp\u003eJava 基础知识总结：标识符、基本数据类型、类型转换、变量、常量、运算符、包机制、JavaDoc使用\u003c\/p\u003e"}</script><meta property="og:title" content="Java基础 | Graundcian's Blog">
 <meta property="og:type" content="article">
-<meta property="og:image" content="/images/icon.png">
-<meta property="og:url" content="/posts/java%E5%9F%BA%E7%A1%80/">
+<meta property="og:image" content="https://graundcian.cn/images/icon.png">
+<meta property="og:url" content="https://graundcian.cn/posts/java%E5%9F%BA%E7%A1%80/">
 <meta property="og:description" content="Java 基础知识总结：标识符、基本数据类型、类型转换、变量、常量、运算符、包机制、JavaDoc使用">
 <meta property="og:locale" content="zh">
 <meta property="og:site_name" content="Graundcian's Blog">
@@ -34,8 +34,8 @@
 <meta property="article:section" content="posts">
 <meta property="article:tag" content="learning">
 <meta property="article:tag" content="Java">
-<meta property="og:see_also" content="/posts/java%E5%85%A5%E9%97%A8/">
-<meta property="og:see_also" content="/posts/markdown%E8%AF%AD%E6%B3%95/">
+<meta property="og:see_also" content="https://graundcian.cn/posts/java%E5%85%A5%E9%97%A8/">
+<meta property="og:see_also" content="https://graundcian.cn/posts/markdown%E8%AF%AD%E6%B3%95/">
 <body class="flex flex-col min-h-screen">
 <header class="fixed flex items-center w-full min-h-16 pl-scrollbar z-50 bg-secondary-bg shadow-sm">
 <div class="w-full max-w-screen-xl mx-auto"><script>let storageColorScheme=localStorage.getItem("lightDarkMode");((storageColorScheme=='Auto'||storageColorScheme==null)&&window.matchMedia("(prefers-color-scheme: dark)").matches||storageColorScheme=="Dark")&&document.getElementsByTagName('html')[0].classList.add('dark')</script>
@@ -497,8 +497,8 @@ final double PI = 3.14;
 <h2 id=包机制javadoc>包机制、JavaDoc</h2>
 </div>
 <div class=my-4>
-<a href=/tags/learning/ class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#learning</a>
-<a href=/tags/java/ class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#Java</a>
+<a href=https://graundcian.cn/tags/learning/ class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#learning</a>
+<a href=https://graundcian.cn/tags/java/ class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#Java</a>
 </div>
 <div class="flex md:justify-end my-4">
 <a href=https://github.com/Graundcian/site-src/blob/main/content/posts/Java%e5%9f%ba%e7%a1%80.md title="Edit this page">
@@ -508,11 +508,11 @@ final double PI = 3.14;
 </div>
 <div class=py-2>
 <div class="flex flex-col md:flex-row items-center my-8">
-<a href=/authors/graundcian/ class="w-24 h-24 md:mr-4">
+<a href=https://graundcian.cn/authors/graundcian/ class="w-24 h-24 md:mr-4">
 <img src=https://cdn.jsdelivr.net/gh/Graundcian/images@master/blog/20210702170937.png class="w-full bg-primary-bg rounded-full" alt=Avatar>
 </a>
 <div class="w-full md:w-auto mt-4 md:mt-0">
-<a href=/authors/graundcian/ class="block font-bold text-lg pb-1 mb-2 border-b">Graundcian</a>
+<a href=https://graundcian.cn/authors/graundcian/ class="block font-bold text-lg pb-1 mb-2 border-b">Graundcian</a>
 <span class="block pb-2">哪里有阴影，哪里就有光.</span>
 <a href=mailto:miaofc2017@gmail.com class=mr-1>
 <i class="fas fa-envelope"></i>
@@ -526,11 +526,11 @@ final double PI = 3.14;
 <div class="flex flex-col md:flex-row md:justify-between -mx-2 mt-4 px-2 pt-4 border-t">
 <div>
 <span class="block font-bold">上一页</span>
-<a href=/posts/nginx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/ class=block>Nginx反向代理</a>
+<a href=https://graundcian.cn/posts/nginx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/ class=block>Nginx反向代理</a>
 </div>
 <div class="md:text-right mt-4 md:mt-0">
 <span class="block font-bold">下一页</span>
-<a href=/posts/java%E5%85%A5%E9%97%A8/ class=block>Java入门</a>
+<a href=https://graundcian.cn/posts/java%E5%85%A5%E9%97%A8/ class=block>Java入门</a>
 </div>
 </div>
 </div>
@@ -602,9 +602,9 @@ final double PI = 3.14;
 <div class="col-span-2 lg:col-span-6 bg-secondary-bg rounded p-6">
 <h2 class="text-lg font-semibold mb-4">相关</h2>
 <div class=content>
-<a href=/posts/java%E5%85%A5%E9%97%A8/>Java入门</a>
+<a href=https://graundcian.cn/posts/java%E5%85%A5%E9%97%A8/>Java入门</a>
 <br>
-<a href=/posts/markdown%E8%AF%AD%E6%B3%95/>Markdown语法</a>
+<a href=https://graundcian.cn/posts/markdown%E8%AF%AD%E6%B3%95/>Markdown语法</a>
 <br>
 </div>
 </div>
@@ -615,7 +615,7 @@ final double PI = 3.14;
 </main>
 <footer class=pl-scrollbar>
 <div class="w-full max-w-screen-xl mx-auto"><div class="text-center p-6 pin-b">
-<p class="text-sm text-tertiary-text">&copy; 2021 <a href=https://www.graundcian.com/>Graundcian</a>
+<p class="text-sm text-tertiary-text">&copy; 2021 <a href=https://www.graundcian.cn/>Graundcian</a>
 &#183; Powered by the <a href=https://github.com/wangchucheng/hugo-eureka class=hover:text-eureka>Eureka</a> theme for <a href=https://gohugo.io class=hover:text-eureka>Hugo</a></p>
 </div></div>
 </footer>
